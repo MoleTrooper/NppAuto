@@ -5,9 +5,5 @@ state("N++")
 
 split
 {
-	if (current.levelID > old.levelID)
-	{
-		return true;
-	}
-	return false;
+	return current.levelID > old.levelID;
 }
